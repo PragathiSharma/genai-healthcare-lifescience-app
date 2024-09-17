@@ -30,7 +30,7 @@ source_data_path = "dbfs:/synthea-data/csv/"
 target_table = "unitygo.diabetes_cure."+table_name
 schema_location = "dbfs:/synthea-data/schemaLocation/"+table_name
 checkpoint_location = "dbfs:/synthea-data/checkpoints/bronze_checkpoint_"+table_name
-path_filter = table_name+".csv"
+path_filter = table_name+"*.csv"
 
 # COMMAND ----------
 
