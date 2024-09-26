@@ -1,0 +1,36 @@
+name: CICD
+
+concurrency: 1
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy bundle to Development
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Databricks CLI
+        uses: databricks/setup-cli@7e0aeda05c4ee281e005333303a9d2e89b6ed639
+        with:
+          version: '0.209.0'
+
+      - name: Deploy
+        run: |
+          echo "Deploying"
+          databricks bundle validate
+          databricks bundle deploy
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          HOME: ${{ github.workspace }}
+    
+
+  
