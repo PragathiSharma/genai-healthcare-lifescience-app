@@ -37,12 +37,10 @@ For this, when you clone the github repo, update the DATABRICKS_HOST and DATABRI
 
 <b>ML model for diabetes complication classification
 
-Now that the training data, pipelines are all set up, next step is to build the Machine learning model for diabetes complication classification
-Here you are use the AutoML to use the training dataset and choose Severity to run and create a suitable model. 
-
-Once the model is finalized, we will start to set up the chat box using the hands on lab to deploy and evaluate the Gen AI application
+Now that the training data, pipelines are all set up, next step is to build the Machine learning model for diabetes complication classification.
+<br>Here you are use the AutoML to use the training dataset and choose Severity to run and create a suitable model. 
+<br>Once the model is finalized, we will start to set up the chat box using the hands-on lab to deploy and evaluate the Gen AI application
 
 
 Please bookmark this url, because it contains the best practices for this evolving topic for using AI Agent framework:
-
-https://ai-cookbook.io/  
+<br>https://ai-cookbook.io/  
