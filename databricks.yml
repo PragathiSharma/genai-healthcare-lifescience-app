@@ -16,7 +16,7 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-8333330282859393.13.azuredatabricks.net/
+      host: https://myworkspace.databricks.com
       root_path: ~/genai_app/genai-healthcare-lifescience-app
 
   ## Optionally, there could be a 'staging' target here.
