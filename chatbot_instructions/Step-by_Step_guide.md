@@ -15,11 +15,15 @@ The below are the prerequisites we need to leverage AI Agent framework, which ca
 https://github.com/databricks/genai-cookbook/
 
 3.	Fill in the config in rag_app_sample_code/00_global_config. If you have followed the above prerequisites, you should not have any problems filling in the details, but a couple of details that are extremely important not to miss and can be found in the user interface, including:
+
 a.	VECTOR_SEARCH_ENDPOINT, which can be found from the Compute tab:
 
 ![image](/files/genAI_reference_images/vector_search_endpoint.jpg)
+
 b.	Volume can be found under the database of a Catalog
+
 ![image](/files/genAI_reference_images/volume.jpg)
+
 4.	To verify everything is set up correctly, run 01_validate_config in the corresponding folder of the file type of your choice. For example, for pdf files,they can be found at the following location: 
 /genai-cookbook/rag_app_sample_code/A_POC_app/pdf_uc_volume/01_validate_config
 
