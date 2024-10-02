@@ -32,7 +32,7 @@ Lineage of the training dataset can be view as below
 Step 2 through to Step 4 is automated to support continuous data ingestion using a workflow which can be deployed using Databricks DAB. 
 Here are the instructions to set up.
 - In the .github/workflows/cicd.yml, the bundle commands are executed to create the workflow. <br>
-For this, when you clone the github repo, update the DATABRICKS_HOST and DATABRICKS_TOKEN to point to your workspace.
+For this, when you clone the github repo, update the branch name , DATABRICKS_HOST and DATABRICKS_TOKEN to point to your workspace.
 - The project contains configuration file databricks.yml to set up the environments. Set up the host and root_path as desired to deploy the contents of this repo into your workspace.   
 - resources/synthea_diabetic_patient_data_ingestion.yml holds the job configuration.Ensure that the path for the notebooks are all correct.
 
