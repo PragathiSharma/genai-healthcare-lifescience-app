@@ -34,7 +34,7 @@ Lineage of the training dataset can be view as below
 
 ![image](/files/genAI_reference_images/lineage.jpg)
 
-<b>Databricks Asset bundles(DAB) for Deployment<b>
+<b>Databricks Asset bundles(DAB) for Deployment</b>
 
 Step 2 through to Step 4 is automated to support continuous data ingestion using a workflow which can be deployed using Databricks DAB. 
 Here are the instructions to set up.
@@ -43,7 +43,7 @@ For this, when you clone the github repo, update the branch name , DATABRICKS_HO
 - The project contains configuration file databricks.yml to set up the environments. Set up the host and root_path as desired to deploy the contents of this repo into your workspace.   
 - resources/synthea_diabetic_patient_data_ingestion.yml holds the job configuration.Ensure that the path for the notebooks are all correct.
 
-<b>ML model for diabetes complication classification
+<b>ML model for diabetes complication classification</b>
 
 Now that the training data, pipelines are all set up, next step is to build the Machine learning model for diabetes complication classification.
 <br>Here you are use the AutoML to use the training dataset and choose Severity to run and create a suitable model. 
