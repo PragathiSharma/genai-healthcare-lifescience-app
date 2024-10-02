@@ -8,7 +8,7 @@ Databricks Data Intelligence Platform provides the intelligence to power the gen
 
 <b>Getting started</b>
 
-Prerequisits:
+Prerequisites:
 Basic knowledge of git to clone this repo and databricks interface would be essential for running this project. 
 
 Set up the git integration with databricks using the reference https://docs.databricks.com/en/repos/repos-setup.html
