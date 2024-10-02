@@ -8,6 +8,13 @@ Databricks Data Intelligence Platform provides the intelligence to power the gen
 
 <b>Getting started</b>
 
+Prerequisits:
+Basic knowledge of git to clone this repo and databricks interface would be essential for running this project. 
+
+Set up the git integration with databricks using the reference https://docs.databricks.com/en/repos/repos-setup.html
+
+Clone this repository in the Repo's folder to get the entire project into your workspace. Once you clone the repo, follow the steps as below
+
 Step 1: Data generation <br>
 Follow along the steps in the notebook synthea_data_generator to set up patients data. The data generated would be under /dbfs/synthea-data/ folder. All of the different datasets such as allergies, careplans, claims, claims_transactions, conditions, devices, encounters, imaging_studies, immunizations, medications, observations, organizations, patients, payer_transitions, payers, procedures, providers, supplies are generated within the csv folder. If additional datasets needs to be added to any of these, ensure to keep the filenames unique by appending either state or timestamp to the filename so that autoloader can load incrementally. e.g., allergies_Alabama.csv and so on
 
