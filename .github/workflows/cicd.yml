@@ -7,7 +7,7 @@ on:
 
   push:
     branches:
-      - your_branch_name
+      - main
 
 jobs:
   deploy:
@@ -28,8 +28,8 @@ jobs:
           databricks bundle validate
           databricks bundle deploy
         env:
-          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }} # Update this to your databricks workspace url
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }} # Update this to your databricks personal token. For best practise, Always save the token in the Github secrets to avoid exposing token to the world
           HOME: ${{ github.workspace }}
     
 

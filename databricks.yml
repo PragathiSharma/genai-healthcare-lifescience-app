@@ -16,8 +16,8 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://myworkspace.databricks.com
-      root_path: ~/genai_app/genai-healthcare-lifescience-app
+      host: https://myworkspace.databricks.com  # Update this to your databricks workspace url
+      root_path: ~/genai_app/genai-healthcare-lifescience-app # folder path where you want to deploy your project
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/ci-cd.html.)
