@@ -55,7 +55,7 @@ git remote set-url origin http://github.com/YOU/YOUR_REPO
     The job would work with notebook paths as /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app 
 
 - In the .github/workflows/cicd.yml, the bundle commands are executed to create the workflow. <br>
-For this, DATABRICKS_HOST and DATABRICKS_TOKEN configs are picked up from the github actions secrets saved in the prerequisits
+For this, DATABRICKS_HOST and DATABRICKS_TOKEN configs are picked up from the github actions secrets saved in the prerequisites
 
 
 <b>Databricks Asset bundles(DAB) for Deployment</b>
@@ -64,6 +64,9 @@ Once you commit the configuration updates into your repo, You can manually go an
 
 </br> git commit -m "updated tokens"
 </br>git push -u origin main
+
+Trigger Github Actions
+![image](/files/genAI_reference_images/githubSecrets.jpg)
 
 Now that all the set up is completed, we can execute the project. 
 
