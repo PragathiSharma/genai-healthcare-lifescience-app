@@ -15,7 +15,7 @@ Prerequisites:
 Github account - sign up for a new github account if not already present.</br>
   >Generate Github token - In the Settings, Navigate to Developer Settings -> Personal access tokens -> generate new token. </br>
   You can set the expiration to 30 days or more if needed. Either Fine grained token/ tokens(classic) would work. </br>
-  >>Fine grained token - Select All repositories, select access level read and write to these : Actions, Workflows, Secrets </br>
+  >>Fine grained token - Select All repositories, Read and Write access to actions, code, commit statuses, deployments, secrets, and workflows </br>
   >>Tokens(classic) - Select the repo, workflow scope while generating</br>
 
 ><b>Copy the token value and save it as it would appear only once. </b>
@@ -26,7 +26,7 @@ Databricks workspace access - Sign up for the Community edition. </br>
   </br><b>Copy the token value and save it as it would appear only once. </b></br>
 2. In the Same Settings page, select Linked accounts - Select Git provider as Github, select Personal Access token and key in the email and token with read/write permissions generated earlier in Github. This would enable the Databricks Repos section accessible to Github.
 
-In the Github Repo Settings, Add the Repository Tokens to save the databrics host and token as shown 
+In the Github Repo Settings, Add the Repository Tokens to save the databricks host and token as shown 
 > DATABRICKS_HOST - url for the datarbricks workspace </br>
 > DATABRICKS_TOKEN - token generated in the databricks workspace 
 
@@ -37,8 +37,9 @@ If you have completed the prerequisites, Clone this repo into your own github ac
 Here are some commands to run from terminal
 > git clone https://github.com/PragathiSharma/genai-healthcare-lifescience-app.git </br>
 cd genai-healthcare-lifescience-app</br>
-git remote remove origin</br>
-git remote add origin https://github.com/PragathiSharma/my_genai_app.git
+git remote set-url origin http://github.com/YOU/YOUR_REPO  
+
+<br>/YOU/YOUR_REPO - Create a new empty repo in Github and provide the username and repo name here.
 
 - The project contains configuration file databricks.yml to set up the environments. Set up the host and root_path as desired to deploy the contents of this repo into your workspace.   
 
@@ -48,17 +49,19 @@ git remote add origin https://github.com/PragathiSharma/my_genai_app.git
     Based on environments, this configurations can be updated for each environment.
 
     resources/synthea_diabetic_patient_data_ingestion.yml holds the job configuration which is pipeline for data ingestion and model training.
-    Ensure that the path for the notebooks are all correct. Replace your_email_id with your email id on the databricks workspace so the path would be picked up correctly.
+    Ensure that the path for the notebooks are all correct. 
+    <br>Replace your_email_id with your email id on the databricks workspace so the path would be picked up correctly.
 
-    The job would work as it is if the root_path as /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app 
+    The job would work with notebook paths as /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app 
 
 - In the .github/workflows/cicd.yml, the bundle commands are executed to create the workflow. <br>
-For this, update the DATABRICKS_HOST and DATABRICKS_TOKEN to point to your workspace.
+For this, DATABRICKS_HOST and DATABRICKS_TOKEN configs are picked up from the github actions secrets saved in the prerequisits
 
 
 <b>Databricks Asset bundles(DAB) for Deployment</b>
 
-Once you commit the configuration updates into your repo, it would trigger the github Actions workflow to deploy the project and job to databricks workspace.
+Once you commit the configuration updates into your repo, You can manually go and trigger github Actions workflow to deploy the project and job to databricks workspace.
+
 </br> git commit -m "updated tokens"
 </br>git push -u origin main
 
