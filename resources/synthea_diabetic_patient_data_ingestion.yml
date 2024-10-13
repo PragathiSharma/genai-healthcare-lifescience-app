@@ -5,70 +5,70 @@ resources:
       tasks:
         - task_key: allergies
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: allergies
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: careplans
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: careplans
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: claims
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: claims
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: claims_transactions
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: claims_transactions
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: conditions
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: conditions
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: devices
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: devices
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: encounters
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: encounters
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: imaging_studies
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: imaging_studies
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: immunizations
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: immunizations
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: medications
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: medications
             source: WORKSPACE
@@ -77,60 +77,60 @@ resources:
           depends_on:
             - task_key: medications
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             source: WORKSPACE
         - task_key: observations
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: observations
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: organizations
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: organizations
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: patients
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: patients
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: payer_transitions
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: payer_transitions
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: payers
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: payers
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: procedures
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: procedures
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: providers
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: providers
             source: WORKSPACE
           timeout_seconds: 300
         - task_key: supplies
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
             base_parameters:
               table_name: supplies
             source: WORKSPACE
@@ -156,7 +156,7 @@ resources:
             - task_key: organizations
             - task_key: claims
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_transformation/patient_a1c
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/patient_a1c
             source: WORKSPACE
         - task_key: patient_complication
           depends_on:
@@ -179,7 +179,7 @@ resources:
             - task_key: organizations
             - task_key: claims
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_transformation/patient_complication
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/patient_complication
             source: WORKSPACE
         - task_key: patient_medication
           depends_on:
@@ -187,7 +187,7 @@ resources:
             - task_key: patient_a1c
             - task_key: medication_mapping
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/data_transformation/patient_medication
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/patient_medication
             source: WORKSPACE
         - task_key: diabetic-training-pipeline
           depends_on:
@@ -195,10 +195,10 @@ resources:
             - task_key: patient_a1c
             - task_key: patient_medication
           notebook_task:
-            notebook_path: /Repos/genai_app/genai-healthcare-lifescience-app/create-pipeline-from-patient-data/diabetic-training-pipeline-notebook
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/create-pipeline-from-patient-data/diabetic-training-pipeline-notebook
             source: WORKSPACE
       git_source:
-        git_url: https://github.com/PragathiSharma/genai-healthcare-lifescience-app.git
+        git_url: https://github.com/PragathiSharma/genai-healthcare-lifescience-app/files.git
         git_provider: gitHub
         git_branch: main
       queue:
