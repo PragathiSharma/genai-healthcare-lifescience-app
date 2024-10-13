@@ -30,7 +30,7 @@ In the Github Repo Settings, Add the Repository Tokens to save the databricks ho
 > DATABRICKS_HOST - url for the datarbricks workspace </br>
 > DATABRICKS_TOKEN - token generated in the databricks workspace 
 
-![image](/files/genAI_reference_images/githubSecrets.jpg)
+![image](/files/genAI_reference_images/githubSecrets.jpg )
 
 If you have completed the prerequisites, Clone this repo into your own github account. 
 
@@ -66,7 +66,8 @@ Once you commit the configuration updates into your repo, You can manually go an
 </br>git push -u origin main
 
 Trigger Github Actions
-![image](/files/genAI_reference_images/githubSecrets.jpg)
+![image](/files/genAI_reference_images/githubActions.jpg)
+
 
 Now that all the set up is completed, we can execute the project. 
 
