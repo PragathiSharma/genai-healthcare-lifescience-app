@@ -17,20 +17,6 @@ resources:
               table_name: careplans
             source: WORKSPACE
           timeout_seconds: 300
-        - task_key: claims
-          notebook_task:
-            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
-            base_parameters:
-              table_name: claims
-            source: WORKSPACE
-          timeout_seconds: 300
-        - task_key: claims_transactions
-          notebook_task:
-            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
-            base_parameters:
-              table_name: claims_transactions
-            source: WORKSPACE
-          timeout_seconds: 300
         - task_key: conditions
           notebook_task:
             notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
@@ -77,7 +63,7 @@ resources:
           depends_on:
             - task_key: medications
           notebook_task:
-            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_ingestion/autoloader_synthea_diabetic_data
+            notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/medication_name_extraction
             source: WORKSPACE
         - task_key: observations
           notebook_task:
@@ -142,7 +128,6 @@ resources:
             - task_key: conditions
             - task_key: allergies
             - task_key: devices
-            - task_key: claims_transactions
             - task_key: careplans
             - task_key: imaging_studies
             - task_key: immunizations
@@ -154,7 +139,6 @@ resources:
             - task_key: providers
             - task_key: observations
             - task_key: organizations
-            - task_key: claims
           notebook_task:
             notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/patient_a1c
             source: WORKSPACE
@@ -165,7 +149,6 @@ resources:
             - task_key: conditions
             - task_key: allergies
             - task_key: devices
-            - task_key: claims_transactions
             - task_key: careplans
             - task_key: imaging_studies
             - task_key: immunizations
@@ -177,7 +160,6 @@ resources:
             - task_key: providers
             - task_key: observations
             - task_key: organizations
-            - task_key: claims
           notebook_task:
             notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/data_transformation/patient_complication
             source: WORKSPACE
@@ -197,9 +179,4 @@ resources:
           notebook_task:
             notebook_path: /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app/files/create-pipeline-from-patient-data/diabetic-training-pipeline-notebook
             source: WORKSPACE
-      git_source:
-        git_url: https://github.com/PragathiSharma/genai-healthcare-lifescience-app/files.git
-        git_provider: gitHub
-        git_branch: main
-      queue:
-        enabled: true
+      

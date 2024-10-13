@@ -26,6 +26,12 @@ Databricks workspace access - Sign up for the Community edition. </br>
   </br><b>Copy the token value and save it as it would appear only once. </b></br>
 2. In the Same Settings page, select Linked accounts - Select Git provider as Github, select Personal Access token and key in the email and token with read/write permissions generated earlier in Github. This would enable the Databricks Repos section accessible to Github.
 
+In the Github Repo Settings, Add the Repository Tokens to save the databrics host and token as shown 
+> DATABRICKS_HOST - url for the datarbricks workspace </br>
+> DATABRICKS_TOKEN - token generated in the databricks workspace 
+
+![image](/files/genAI_reference_images/githubSecrets.jpg)
+
 If you have completed the prerequisites, Clone this repo into your own github account. 
 
 Here are some commands to run from terminal
@@ -42,15 +48,13 @@ git remote add origin https://github.com/PragathiSharma/my_genai_app.git
     Based on environments, this configurations can be updated for each environment.
 
     resources/synthea_diabetic_patient_data_ingestion.yml holds the job configuration which is pipeline for data ingestion and model training.
-    Ensure that the path for the notebooks are all correct.
+    Ensure that the path for the notebooks are all correct. Replace your_email_id with your email id on the databricks workspace so the path would be picked up correctly.
 
-    The job would work as it is if the root_path as ~/genai_app/genai-healthcare-lifescience-app 
+    The job would work as it is if the root_path as /Workspace/Users/your_email_id/genai_app/genai-healthcare-lifescience-app 
 
 - In the .github/workflows/cicd.yml, the bundle commands are executed to create the workflow. <br>
 For this, update the DATABRICKS_HOST and DATABRICKS_TOKEN to point to your workspace.
 
-> DATABRICKS_HOST - url for the workspace
-> DATABRICKS_TOKEN - token generated in the databricks workspace as discussed in prerequisites
 
 <b>Databricks Asset bundles(DAB) for Deployment</b>
 
