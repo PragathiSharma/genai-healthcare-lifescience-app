@@ -71,10 +71,10 @@ Trigger Github Actions
 
 Now that all the set up is completed, we can execute the project. 
 
+Step 0: CatalogSchemaInitSetup.sql has queries to create catalog and schema as used by this project - unitygo.diabetes_cure. If you have different catalog, update the notebooks accordingly.
+
 Step 1: Data generation <br>
 For this Step 1, you could use the data already present in the repo under synthea_sample_data folder or generate new data for larger datasets.
-
-CatalogSchemaInitSetup.sql has queries to create catalog and schema as used by this project - unitygo.diabetes_cure. If you have different catalog, update the notebooks accordingly.
 
 Follow along the steps in the notebook synthea_data_generator to set up patients data. The data generated would be under /dbfs/synthea-data/ folder. All of the different datasets such as allergies, careplans, claims, claims_transactions, conditions, devices, encounters, imaging_studies, immunizations, medications, observations, organizations, patients, payer_transitions, payers, procedures, providers, supplies are generated within the csv folder. If additional datasets needs to be added to any of these, ensure to keep the filenames unique by appending either state or timestamp to the filename so that autoloader can load incrementally. e.g., allergies_Alabama.csv and so on
 
