@@ -96,7 +96,7 @@ Lineage of the training dataset can be view as below
 
 ![image](/files/genAI_reference_images/lineage.jpg)
 
-<b>ML model for diabetes complication classification
+<b>ML model for diabetes complication classification</b>
 
 Now that the training data, pipelines are all set up, next step is to build the Machine learning model for diabetes complication classification.
 <br>Here you are use the AutoML to use the training dataset and choose Severity to run and create a suitable model. 
